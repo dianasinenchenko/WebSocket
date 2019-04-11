@@ -10,14 +10,14 @@ import com.google.gson.annotations.SerializedName;
 public class InitialResponse {
 
     @Expose
-    @SerializedName("response")
-    private String response;
+    @SerializedName("status")
+    private String status;
 
-    public String getResponse() {
-        return response;
+    public String getStatus() {
+        return status;
     }
 
-    public void setResponse(String response) {
-        this.response = response;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

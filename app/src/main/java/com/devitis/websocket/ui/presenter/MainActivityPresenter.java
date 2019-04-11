@@ -40,7 +40,7 @@ public class MainActivityPresenter extends BasePresenterImpl<MainActivityContrac
                     @Override
                     public void onResponse(Call<InitialResponse> call, Response<InitialResponse> response) {
                         InitialResponse resp = response.body();
-                        if (resp.getResponse().equals("OK"))
+                        if (resp.getStatus().equals("OK"))
                             iView.connected();
                         else
                             iView.showErrorMessage("Couldn't Connect");
