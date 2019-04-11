@@ -56,7 +56,7 @@ public abstract class BaseFragment<P extends IBasePresenter> extends Fragment
 
         }
 
-        socket = manager.socket("/watch");
+        socket = manager.socket("/api");
         socket.connect();
     }
 
