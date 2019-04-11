@@ -14,11 +14,14 @@ public class MainActivityContract {
     public interface IView extends IBaseView {
 
         void showErrorMessage(String message);
+        void connected();
+
     }
 
     public interface IPresenter extends IBasePresenter<IView> {
 
         void sendErrorMessage(String message);
+        void check();
     }
 }
 

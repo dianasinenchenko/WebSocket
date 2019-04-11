@@ -1,7 +1,8 @@
 package com.devitis.websocket.data.service;
 
+import com.devitis.websocket.data.model.InitialResponse;
+
 import retrofit2.Call;
-import retrofit2.Response;
 import retrofit2.http.GET;
 
 /**
@@ -11,5 +12,5 @@ import retrofit2.http.GET;
 public interface IWebSocket {
 
     @GET("   ")
-    Call<Response> check();
+    Call<InitialResponse> check();
 }
